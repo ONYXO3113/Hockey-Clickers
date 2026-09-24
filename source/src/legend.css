@@ -1,0 +1,113 @@
+.legend-glory {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 11px;
+  border: 1px solid rgba(255, 212, 74, 0.16);
+  border-radius: 10px;
+  color: #d8bd68;
+  background: rgba(255, 212, 74, 0.06);
+}
+
+.legend-glory span { color: #867a55; font-size: 7px; text-transform: uppercase; }
+.legend-glory strong { font-family: "Arial Narrow", sans-serif; font-size: 19px; }
+.legend-hero { position: relative; display: grid; grid-template-columns: 1.2fr 0.8fr; min-height: 250px; overflow: hidden; border: 1px solid rgba(255, 212, 74, 0.18); border-radius: 18px; background: linear-gradient(115deg, rgba(111, 21, 48, 0.28), transparent 55%), #101724; }
+.legend-hero::before { position: absolute; right: -80px; width: 360px; height: 360px; border: 1px solid rgba(255, 212, 74, 0.06); border-radius: 50%; box-shadow: 0 0 0 34px rgba(255, 212, 74, 0.018), 0 0 0 70px rgba(255, 212, 74, 0.012); content: ''; }
+.legend-hero-copy { position: relative; z-index: 1; padding: 26px 28px; }
+.legend-hero-kicker { display: flex; align-items: center; gap: 6px; color: var(--gold); font-size: 7px; font-weight: 900; letter-spacing: 0.14em; text-transform: uppercase; }
+.legend-hero h2 { margin: 10px 0 0; font-family: "Arial Narrow", sans-serif; font-size: clamp(38px, 4.5vw, 57px); font-style: italic; font-weight: 900; line-height: 0.84; letter-spacing: -0.03em; }
+.legend-hero h2 em { color: var(--gold); font-style: inherit; }
+.legend-hero-copy p { max-width: 530px; margin: 12px 0 0; color: #838d9d; font-size: 9px; line-height: 1.6; }
+.legend-hero-stats { display: flex; flex-wrap: wrap; gap: 22px; margin-top: 22px; }
+.legend-hero-stats div { display: flex; flex-direction: column; gap: 3px; }
+.legend-hero-stats strong { color: #fff; font-family: "Arial Narrow", sans-serif; font-size: 23px; }
+.legend-hero-stats span { color: #677182; font-size: 7px; text-transform: uppercase; }
+.legend-hero-emblem { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; color: var(--gold); }
+.legend-hero-emblem svg { filter: drop-shadow(0 8px 18px rgba(255, 212, 74, 0.18)); }
+.legend-hero-emblem span { color: #8c7c4e; font-size: 7px; font-weight: 900; letter-spacing: 0.2em; }
+
+.legend-dashboard { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
+.daily-card, .legend-tournament-card { min-height: 232px; }
+.legend-card-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.legend-card-heading h3 { margin: 3px 0 0; font-family: "Arial Narrow", sans-serif; font-size: 21px; }
+.legend-card-heading > svg { color: #a14156; }
+.daily-chip { display: flex; align-items: center; gap: 5px; padding: 5px 6px; border-radius: 5px; color: #9a8c61; background: rgba(255, 212, 74, 0.07); font-size: 6px; font-weight: 800; text-transform: uppercase; }
+.daily-card > p { margin: 12px 0 0; color: #6d7788; font-size: 8px; }
+.daily-progress-row { display: flex; align-items: center; justify-content: space-between; margin-top: 19px; }
+.daily-progress-row strong { color: var(--gold); font-family: "Arial Narrow", sans-serif; font-size: 20px; }
+.daily-progress-row span { color: #738a7e; font-size: 8px; }
+.daily-track { height: 5px; margin-top: 8px; overflow: hidden; border-radius: 99px; background: rgba(255, 255, 255, 0.07); }
+.daily-track span { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--aurora), var(--gold)); }
+.claim-button { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 35px; padding: 0 11px; border: 1px solid var(--line); border-radius: 8px; color: #7d8796; background: rgba(255, 255, 255, 0.025); cursor: pointer; font-size: 8px; font-weight: 800; }
+.claim-button.ready { border-color: rgba(255, 212, 74, 0.3); color: #e2ca74; background: rgba(255, 212, 74, 0.09); }
+.claim-button.ready:hover { background: rgba(255, 212, 74, 0.15); }
+.claim-button.claimed { border-color: rgba(78, 224, 164, 0.16); color: #76d7b0; background: rgba(78, 224, 164, 0.06); }
+.claim-button:disabled { cursor: not-allowed; }
+.daily-card > .claim-button { width: 100%; margin-top: 15px; }
+.legend-opponent { display: flex; align-items: center; gap: 10px; margin-top: 18px; }
+.legend-opponent-badge { display: grid; place-items: center; width: 42px; height: 38px; border: 1px solid color-mix(in srgb, var(--team-color) 60%, white 10%); border-radius: 10px; color: #fff; background: color-mix(in srgb, var(--team-color) 32%, #111a28); font-size: 9px; font-weight: 900; }
+.legend-opponent > div { display: flex; flex-direction: column; gap: 3px; }
+.legend-opponent strong { font-family: "Arial Narrow", sans-serif; font-size: 16px; }
+.legend-opponent span { color: #6e7889; font-size: 7px; }
+.legend-round-button { margin-top: 18px; }
+.champion-message { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 154px; text-align: center; }
+.champion-message > div { display: grid; place-items: center; width: 47px; height: 47px; border: 1px solid rgba(255, 212, 74, 0.2); border-radius: 14px; color: var(--gold); background: var(--gold-soft); }
+.champion-message strong { margin-top: 8px; font-family: "Arial Narrow", sans-serif; font-size: 19px; }
+.champion-message > span { margin-top: 3px; color: #6d7788; font-size: 7px; }
+.champion-message button { margin-top: 12px; }
+.legend-last-result { display: flex; align-items: center; gap: 7px; margin-top: 12px; padding: 7px 8px; border-radius: 7px; background: rgba(255, 255, 255, 0.03); }
+.legend-last-result span { font-size: 6px; font-weight: 900; }
+.legend-last-result strong { font-family: "Arial Narrow", sans-serif; font-size: 16px; }
+.legend-last-result small { color: #687283; font-size: 7px; }
+.legend-last-result.won span { color: var(--green); }
+.legend-last-result.lost span { color: #ff718c; }
+
+.legend-section { margin-top: 25px; }
+.legend-section-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 15px; margin-bottom: 12px; }
+.legend-section-heading h2 { margin: 4px 0 0; font-family: "Arial Narrow", sans-serif; font-size: 28px; line-height: 0.95; }
+.legend-section-heading > span { color: #758090; font-size: 7px; }
+.section-hint { color: #667080 !important; }
+.legend-quest-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+.legend-quest { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 10px; min-height: 74px; padding: 11px; border: 1px solid var(--line); border-radius: 11px; background: rgba(255, 255, 255, 0.02); }
+.legend-quest.ready { border-color: rgba(255, 212, 74, 0.16); background: rgba(255, 212, 74, 0.035); }
+.legend-quest.claimed { border-color: rgba(78, 224, 164, 0.14); background: rgba(78, 224, 164, 0.03); }
+.legend-quest-icon { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 10px; color: #c6a74e; background: var(--gold-soft); }
+.legend-quest-copy { min-width: 0; }
+.legend-quest-copy h3 { margin: 0; font-size: 9px; }
+.legend-quest-copy p { margin: 3px 0 0; color: #6b7586; font-size: 7px; line-height: 1.4; }
+.legend-quest-copy > span { display: block; margin-top: 5px; color: #9b8a55; font-size: 7px; }
+.legend-upgrade-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+.legend-upgrade { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 10px; min-height: 78px; padding: 11px; border: 1px solid var(--line); border-radius: 11px; background: rgba(255, 255, 255, 0.02); }
+.legend-upgrade.owned { border-color: rgba(78, 224, 164, 0.15); background: rgba(78, 224, 164, 0.03); }
+.legend-upgrade.locked { opacity: 0.65; }
+.legend-upgrade-icon { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 10px; color: #d6b84f; background: var(--gold-soft); }
+.legend-upgrade-copy { min-width: 0; }
+.legend-upgrade-copy h3 { margin: 0; font-family: "Arial Narrow", sans-serif; font-size: 16px; }
+.legend-upgrade-copy p { margin: 3px 0 0; color: #6b7586; font-size: 7px; line-height: 1.4; }
+.legend-buy { display: flex; align-items: center; justify-content: center; gap: 5px; min-width: 92px; min-height: 34px; padding: 0 8px; border: 1px solid rgba(255, 212, 74, 0.2); border-radius: 8px; color: #d8c47c; background: rgba(255, 212, 74, 0.07); cursor: pointer; font-size: 8px; font-weight: 800; }
+.legend-buy:disabled { border-color: var(--line); color: #5e6879; background: rgba(255, 255, 255, 0.02); cursor: not-allowed; }
+.legend-teaser, .legend-unlocked-banner { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 12px; margin-top: 15px; padding: 14px; border: 1px solid rgba(255, 212, 74, 0.12); border-radius: 12px; background: rgba(255, 212, 74, 0.035); }
+.legend-unlocked-banner { border-color: rgba(78, 224, 164, 0.18); background: rgba(78, 224, 164, 0.045); }
+.legend-teaser-icon { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 10px; color: #c6a74e; background: var(--gold-soft); }
+.legend-unlocked-banner .legend-teaser-icon { color: var(--green); background: rgba(78, 224, 164, 0.09); }
+.legend-teaser h3, .legend-unlocked-banner h3 { margin: 3px 0 0; font-family: "Arial Narrow", sans-serif; font-size: 17px; }
+.legend-teaser p, .legend-unlocked-banner p { margin: 3px 0 0; color: #6c7687; font-size: 7px; line-height: 1.45; }
+
+@media (max-width: 1040px) {
+  .legend-hero { grid-template-columns: 1fr; }
+  .legend-hero-emblem { display: none; }
+}
+
+@media (max-width: 620px) {
+  .legend-glory { display: none; }
+  .legend-hero-copy { padding: 22px 19px; }
+  .legend-dashboard, .legend-quest-grid, .legend-upgrade-grid { grid-template-columns: 1fr; }
+  .legend-teaser, .legend-unlocked-banner { grid-template-columns: auto 1fr; }
+  .legend-teaser button, .legend-unlocked-banner button { grid-column: 1 / -1; width: 100%; }
+}
+
+@media (max-width: 430px) {
+  .legend-section-heading { align-items: flex-start; flex-direction: column; }
+  .legend-upgrade { grid-template-columns: auto minmax(0, 1fr); }
+  .legend-buy { grid-column: 1 / -1; width: 100%; }
+}
