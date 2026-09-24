@@ -801,7 +801,7 @@ button:disabled {
 
 .crest-button {
   position: relative;
-  z-index: 2;
+  z-index: 6;
   display: grid;
   place-items: center;
   width: min(52%, 220px);
@@ -812,8 +812,13 @@ button:disabled {
   color: #fff;
   background: transparent;
   cursor: pointer;
+  user-select: none;
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
+}
+
+.crest-button > * {
+  pointer-events: none;
 }
 
 .crest-button::after {

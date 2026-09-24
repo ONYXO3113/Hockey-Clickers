@@ -2046,15 +2046,17 @@ function RinkPanel({ game, metric, now, onClick, particles, ownedPlayerCount, cr
         ))}
 
         <button
+          type="button"
           className={`crest-button ${hasGoldenGoal ? 'golden-boost' : ''}`}
           onClick={onClick}
           aria-label="Clique sur le logo Prisme pour gagner un puck"
+          title="Clique pour gagner un puck"
         >
           <span className="crest-aura" />
           <span className="crest-image-wrap">
             <img src="/assets/virevolt-prisme.svg" alt="Logo du Virevolt Hockey Club" />
           </span>
-          <span className="click-hint"><MousePointerClick size={16} /> Touche le crest</span>
+          <span className="click-hint"><MousePointerClick size={16} /> Clique pour gagner un puck</span>
         </button>
       </div>
 
