@@ -1684,7 +1684,7 @@ function App() {
 
       <header className="topbar">
         <button className="brand" onClick={() => changeTab('home')} aria-label="Retour à l'accueil">
-          <img src="/assets/virevolt-prisme.svg" alt="" />
+          <img src="./assets/virevolt-prisme.svg" alt="" />
           <span className="brand-copy">
             <strong>PUCK VIREVOLT</strong>
             <span>PUCK VIREVOLT · CLICKER</span>
@@ -2054,7 +2054,7 @@ function RinkPanel({ game, metric, now, onClick, particles, ownedPlayerCount, cr
         >
           <span className="crest-aura" />
           <span className="crest-image-wrap">
-            <img src="/assets/virevolt-prisme.svg" alt="Logo du Virevolt Hockey Club" />
+            <img src="./assets/virevolt-prisme.svg" alt="Logo du Virevolt Hockey Club" />
           </span>
           <span className="click-hint"><MousePointerClick size={16} /> Clique pour gagner un puck</span>
         </button>
