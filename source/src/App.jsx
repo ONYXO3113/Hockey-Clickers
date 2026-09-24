@@ -1686,7 +1686,7 @@ function App() {
         <button className="brand" onClick={() => changeTab('home')} aria-label="Retour à l'accueil">
           <img src="/assets/virevolt-prisme.svg" alt="" />
           <span className="brand-copy">
-            <strong>PUCK EMPIRE</strong>
+            <strong>PUCK VIREVOLT</strong>
             <span>PUCK VIREVOLT · CLICKER</span>
           </span>
         </button>
